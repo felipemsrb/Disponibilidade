@@ -1,0 +1,60 @@
+header {
+    width: auto;
+    background: #BBBBBB;
+    padding: 20px 0;
+    
+}
+
+.caixa {
+   
+    position: relative;
+	
+	margin: 0 auto;
+    color: white;
+}
+
+.titulo{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    margin: 0 0 10px 10px;
+    font-size: 20px
+}
+
+.botaopesquisa {
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    font-weight: bold;
+    color: white;
+    background: cornflowerblue;
+    border: none;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.botaopesquisa:hover {
+    background: darkblue;
+    transform: scale(1.2)
+}
+footer {
+    background-image: url("bg.jpg");
+    width: auto
+    
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+
+}
