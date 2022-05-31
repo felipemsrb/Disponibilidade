@@ -1,8 +1,40 @@
 header {
     width: auto;
     background: #BBBBBB;
-    padding: 20px 0;
+    padding: 40px 0;
     
+    
+}
+
+nav {
+    position: absolute;
+    top: -9px;
+    right: 11px;
+    margin: auto;
+    
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0px 15px;
+    padding: 15px;
+
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: darkorange
+}
+
+.banner {
+    width: 100%;
 }
 
 .caixa {
@@ -13,11 +45,105 @@ header {
     color: white;
 }
 
-.titulo{
+h1 {
     text-align: center;
     font-size: large;
     font-weight: bold;
+    text-decoration: underline;
     
+}
+
+.principal {
+    margin: 2em;
+}
+
+.principal p {
+    text-align: center;
+    font-style: italic;
+    margin: 2em;
+    font-size: larger;
+}
+
+.servicos ul {
+    margin: 2em;
+    text-align: center;
+    font-size: larger;
+
+}
+
+.servicos li {
+    margin: 5px;
+}
+
+.mapa {
+    padding: 2em 3em;
+    
+}
+
+.mapa-conteudo {
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.quartos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.quartos li {
+	border: 2px solid #000000;
+	border-radius: 10px;
+	display: inline-block;
+	text-align: center;
+	padding: 30px 20px;
+	width: 30%;
+	box-sizing: border-box;
+	vertical-align: top;
+	margin: 0 1.5%;
+}
+
+.quartos li:hover {
+	border-color: #FF8C00;
+}
+
+.quartos li:active {
+	border-color: #088C19;
+}
+
+
+
+.imagem-quartos {
+    box-sizing: border-box;
+    height: 250px;
+    width: 200px;
+    display: inline-block;
+    margin: 10px 1.5%;
+    border-radius: 5px;
+  
+}
+
+.descricao {
+    font-weight: bold;
+    font-size: 15px
+
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 1em;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+
 }
 
 form {
