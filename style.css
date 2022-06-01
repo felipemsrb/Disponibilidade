@@ -103,6 +103,8 @@ h1 {
 	margin: 0 1.5%;
 }
 
+
+
 .quartos li:hover {
 	border-color: #FF8C00;
 }
@@ -114,10 +116,10 @@ h1 {
 
 
 .imagem-quartos {
-    box-sizing: border-box;
+    
     height: 250px;
     width: 200px;
-    display: inline-block;
+    
     margin: 10px 1.5%;
     border-radius: 5px;
   
@@ -146,6 +148,8 @@ h2 {
 
 }
 
+
+
 form {
     margin: 40px 0;
 }
@@ -171,9 +175,12 @@ form label {
     background: darkblue;
     transform: scale(1.2)
 }
+
 footer {
     background-image: url("bg.jpg");
-    width: auto
+    width: 100%;
+    clear: left;
+    
     
 }
 
@@ -183,4 +190,33 @@ footer > p {
     font-weight: bold;
     padding: 20px 0;
 
+}
+
+.descricao-quartos {
+    border: 2px solid #000000;
+	border-radius: 10px;
+    float: left;
+	text-align: center;
+	padding: 30px 20px;
+	width: 300px;
+    height: 360px;
+	box-sizing: border-box;
+	vertical-align: top;
+	margin: 2em 1.5%;
+}
+
+.texto-quartos {
+    width: 40%;
+	display: inline-block;
+	vertical-align: top;
+    font-size: 30px;
+    padding: 1em;
+    
+}
+
+.conteudo-quartos {
+    margin: 3px auto;
+    padding: 20px;
+    
+    
 }
