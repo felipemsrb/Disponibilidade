@@ -23,14 +23,50 @@
     </header> 
    
     <main>
-        
-        
-        <form>
-        <h2>Selecione o número de pessoas desta reserva.</h2>
-             
-                <label><input type="radio" name="pessoas" required checked> 1 Pessoa</label>
-                <label><input type="radio" name="pessoas"> 2 Pessoas</label>
-                <label><input type="radio" name="pessoas"> 3 Pessoas</label>
+        <h1>Realize aqui sua reserva!</h1>
+        <p>Preencha o formulário abaixo com os seus dados</p>
+            <form>
+                <fieldset>
+                    <div>
+                        <label>Nome</label>
+                        <input type="text">
+                    </div>
+
+                    <div>
+                        <label>Sobrenome</label>
+                        <input type="text">
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+
+                
+                <div>
+                    <label>Telefone</label>
+                    <input type="tel">
+                </div>
+                
+                <h2>Selecione abaixo o número de pessoas desta reserva</h2>
+                <div>
+                    <label><input type="radio" name="pessoas" required checked> 1 Pessoa</label>
+                    <label><input type="radio" name="pessoas"> 2 Pessoas</label>
+                    <label><input type="radio" name="pessoas"> 3 Pessoas</label>
+                    
+                </div>
+
+                <div>
+                    <label>Informações adicionais e pedidos</label>
+                    <textarea rows="6"></textarea>
+                </div>
+
                 <input type="submit" value="Pesquisar" class="botaopesquisa">
-            </form>
+         </form>
     </main>
+
+    <footer>
+        <p>Hotel Jambalaia</p>
+    </footer>
+</body>
