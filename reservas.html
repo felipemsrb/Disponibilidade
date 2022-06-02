@@ -49,7 +49,7 @@
                     <input type="tel">
                 </div>
                 
-                <h2>Selecione abaixo o número de pessoas desta reserva</h2>
+                <h2>Selecione o número de pessoas e o tipo de quarto</h2>
                 <div>
                     <label><input type="radio" name="pessoas" required checked> 1 Pessoa</label>
                     <label><input type="radio" name="pessoas"> 2 Pessoas</label>
@@ -57,12 +57,22 @@
                     
                 </div>
 
+                <fieldset>
+                    <legend>Selecione o tipo de quarto</legend>
+                    <select>
+                        <option selected disabled value="">Selecione</option>
+                        <option>Single</option>
+                        <option>Twin</option>
+                        <option>Triplo</option>
+                    </select>
+                </fieldset>
+
                 <div>
                     <label>Informações adicionais e pedidos</label>
                     <textarea rows="6"></textarea>
                 </div>
 
-                <input type="submit" value="Pesquisar" class="botaopesquisa">
+                <input type="submit" value="Reservar" class="botaopesquisa">
          </form>
     </main>
 
