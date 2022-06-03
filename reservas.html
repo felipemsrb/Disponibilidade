@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body-form">
     <header>
         <div class="caixa">
              <nav>
@@ -22,44 +22,48 @@
         </div>
     </header> 
    
-    <main>
+    <main class="principal-main">
         <h1>Realize aqui sua reserva!</h1>
-        <p>Preencha o formulário abaixo com os seus dados</p>
+        <p id="sub-form">Preencha o formulário abaixo com os seus dados</p>
             <form>
                 <fieldset>
                     <div>
-                        <label>Nome</label>
-                        <input type="text">
+                        <label for="nome" class="label">Nome</label>
+                        <input type="text" name="nome" id="nome"  class="input" required >
                     </div>
 
                     <div>
-                        <label>Sobrenome</label>
-                        <input type="text">
+                        <label for="sobrenome" class="label">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" class="input" required>
                     </div>
                 </fieldset>
 
-                <div>
-                    <label>Email</label>
-                    <input type="email">
-                </div>
-
+                <fieldset>
+                    <div>
+                        <label for="email" class="label">Email</label>
+                        <input type="email" name="email" id="email" class="input" required>
+                    </div>
                 
-                <div>
-                    <label>Telefone</label>
-                    <input type="tel">
-                </div>
                 
-                <h2>Selecione o número de pessoas e o tipo de quarto</h2>
-                <div>
-                    <label><input type="radio" name="pessoas" required checked> 1 Pessoa</label>
-                    <label><input type="radio" name="pessoas"> 2 Pessoas</label>
-                    <label><input type="radio" name="pessoas"> 3 Pessoas</label>
-                    
-                </div>
+                    <div>
+                        <label for="fone" class="label">Telefone</label>
+                        <input type="tel" name="fone" id="fone"  class="input" required>
+                    </div>
+                 </fieldset>
+               
+                 <h2>Selecione o número de pessoas e o tipo de quarto</h2>
+                
+                <fieldset>
+                    <div class="numero-pessoas">
+                        <label class="label-numero"><input type="radio" name="pessoas"  class="input"required checked> 1 Pessoa</label>
+                        <label class="label-numero"><input type="radio" name="pessoas" class="input"> 2 Pessoas</label>
+                        <label class="label-numero"><input type="radio" name="pessoas" class="input"> 3 Pessoas</label>
+                    </div>
+                </fieldset> 
 
                 <fieldset>
-                    <legend>Selecione o tipo de quarto</legend>
-                    <select>
+                    <legend class="quarto-pedido">Selecione o tipo de quarto</legend>
+                    <select id="select">
                         <option selected disabled value="">Selecione</option>
                         <option>Single</option>
                         <option>Twin</option>
@@ -67,12 +71,13 @@
                     </select>
                 </fieldset>
 
-                <div>
-                    <label>Informações adicionais e pedidos</label>
-                    <textarea rows="6"></textarea>
-                </div>
-
-                <input type="submit" value="Reservar" class="botaopesquisa">
+                <fieldset id="textarea">
+                    <div>
+                        <label class="quarto-pedido">Informações adicionais e pedidos</label>
+                        <textarea rows="6"></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Reservar" id="botaopesquisa">
          </form>
     </main>
 
