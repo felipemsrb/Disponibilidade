@@ -26,29 +26,29 @@
     <main class="principal-main">
         <h1>Realize aqui sua reserva!</h1>
         <p id="sub-form">Preencha o formulário abaixo com os seus dados</p>
-            <form>
+            <form id="formulario" onsubmit="reserva()">
                 <fieldset>
                     <div>
                         <label for="nome" class="label">Nome</label>
-                        <input type="text" name="nome" id="nome"  class="input" required >
+                        <input type="text" name="nome" id="nome"  class="input" >
                     </div>
 
                     <div>
                         <label for="sobrenome" class="label">Sobrenome</label>
-                        <input type="text" name="sobrenome" id="sobrenome" class="input" required>
+                        <input type="text" name="sobrenome" id="sobrenome" class="input" >
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <div>
                         <label for="email" class="label">Email</label>
-                        <input type="email" name="email" id="email" class="input" required>
+                        <input type="email" name="email" id="email" class="input" >
                     </div>
                 
                 
                     <div>
                         <label for="fone" class="label">Telefone</label>
-                        <input type="tel" name="fone" id="fone"  class="input" required>
+                        <input type="tel" name="fone" id="fone"  class="input" >
                     </div>
                  </fieldset>
                
@@ -56,19 +56,19 @@
                 
                 <fieldset>
                     <div class="numero-pessoas">
-                        <label class="label-numero"><input type="radio" name="pessoas"  class="input"required checked> 1 Pessoa</label>
-                        <label class="label-numero"><input type="radio" name="pessoas" class="input"> 2 Pessoas</label>
-                        <label class="label-numero"><input type="radio" name="pessoas" class="input"> 3 Pessoas</label>
+                        <label class="label-numero"><input type="radio" name="pessoas"  class="input" value="1" checked> 1 Pessoa</label>
+                        <label class="label-numero"><input type="radio" name="pessoas" class="input" value="2"> 2 Pessoas</label>
+                        <label class="label-numero"><input type="radio" name="pessoas" class="input" value="3"> 3 Pessoas</label>
                     </div>
                 </fieldset> 
 
                 <fieldset>
                     <legend class="quarto-pedido">Selecione o tipo de quarto</legend>
-                    <select id="select">
+                    <select id="tipoquarto" name="tipoquarto">
                         <option selected disabled value="">Selecione</option>
-                        <option>Single</option>
-                        <option>Twin</option>
-                        <option>Triplo</option>
+                        <option value="single">Single</option>
+                        <option value="twin">Twin</option>
+                        <option value="triple">Triplo</option>
                     </select>
                 </fieldset>
 
@@ -78,7 +78,7 @@
                         <textarea rows="6"></textarea>
                     </div>
                 </fieldset>
-                <button id="botaopesquisa" onclick= "reserva('consegui')">Reservar</button>
+                <button id="botaopesquisa" type="submit">Reservar</button>
          </form>
     </main>
 
